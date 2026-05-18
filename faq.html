@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>よくある質問 | HUG TRS AUTO</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Noto Sans JP', 'Meiryo', sans-serif;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .faq-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  .faq-page-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+  }
+
+  .faq-page-desc {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 48px;
+  }
+
+  .faq-section {
+    margin-bottom: 44px;
+  }
+
+  .section-heading {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2e7d32;
+    border-bottom: 2px solid #2e7d32;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    letter-spacing: 0.03em;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 6px;
+    cursor: pointer;
+    text-align: left;
+    gap: 14px;
+    transition: background 0.15s;
+  }
+
+  .faq-q:hover { background: #f7faf7; }
+
+  .faq-q-text {
+    font-size: 14px;
+    color: #1a1a1a;
+    line-height: 1.65;
+  }
+
+  .faq-q-text .q-label {
+    color: #2e7d32;
+    font-weight: 700;
+    margin-right: 6px;
+  }
+
+  .faq-icon {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    border: 1.5px solid #2e7d32;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2e7d32;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+    transition: transform 0.25s ease;
+    user-select: none;
+  }
+
+  .faq-icon.open { transform: rotate(45deg); }
+
+  .faq-a {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.32s ease, padding 0.25s ease;
+  }
+
+  .faq-a.open { max-height: 600px; }
+
+  .faq-a-inner {
+    padding: 2px 8px 18px 26px;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.85;
+  }
+
+  /* 差別化ポイントのハイライト */
+  .faq-a-inner .highlight {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #1b5e20;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin: 0 2px;
+  }
+
+  @media (max-width: 600px) {
+    .faq-wrap { padding: 36px 16px 60px; }
+    .faq-page-title { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="faq-wrap">
+  <h1 class="faq-page-title">よくある質問</h1>
+  <p class="faq-page-desc">
+    お客様からよくいただくご質問をまとめました。<br>
+    ご不明な点がございましたら、お気軽にお問い合わせください。
+  </p>
+
+  <!-- 審査について -->
+  <div class="faq-section">
+    <div class="section-heading">審査について</div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>ブラックでも車は購入できますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">はい、可能な場合があります。当社は信用情報に問題がある方でも対応できるよう、独自の審査基準を設けています。まずはお気軽にご相談ください。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>自己破産後でも申し込みできますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">免責決定後でもお申し込みいただける場合があります。ただし、免責決定から<span class="highlight">1〜2年以上経過していること</span>、および<span class="highlight">現在安定した収入があること</span>が条件となる場合が多いです。破産直後のお申し込みは難しいケースが多いため、まずはご相談ください。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>任意整理・債務整理中でも相談できますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">整理中の方でもご相談は受け付けています。現在の状況をお聞かせいただいた上でご案内いたします。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>他社ローンで審査落ちしました。可能性はありますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">当社独自の審査基準がありますので、他社で審査落ちになった方でも審査通過する場合があります。ぜひ一度ご相談ください。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>過去に延滞や支払い遅れがありますが大丈夫ですか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">過去の延滞情報があっても審査可能な場合があります。審査では過去の傷よりも<span class="highlight">現在の収入・借入状況</span>が重視される傾向があります。現状を正直にお申告ください。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>アルバイト・パート・年金受給者でも申し込みできますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">はい、アルバイト・パート・年金受給者の方もお申し込みいただけます。安定した収入があればご利用いただける場合があります。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TRS AUTOの仕組みについて -->
+  <div class="faq-section">
+    <div class="section-heading">TRS AUTOの仕組みについて</div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>信用情報に傷があるのになぜ審査が通るのですか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">TRS AUTOでは、お客様がローンを組む際に<span class="highlight">TRS AUTO自身が連帯保証人</span>になります。これにより金融機関が安心して融資できる仕組みになっています。これが一般的な信用回復ローンとの最大の違いです。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>GPSは設置されますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">TRS AUTOが連帯保証人となる仕組みのため、<span class="highlight">GPS設置は不要</span>です。一般的な信用回復ローンの多くはGPS設置が必要ですが、当社ではその必要がありません。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>車の所有権はいつ自分のものになりますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">返済中は所有権がTRS AUTOに残りますが、<span class="highlight">完済後にお客様へ移転</span>します。完済後は売却・下取りも自由に行えます。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>返済を続けると本当に信用情報は回復しますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">TRS AUTOの信用回復ローンでは、毎月の返済実績が信用情報機関に記録されます。事故情報が消えるわけではありませんが、きちんと返済した記録が積み重なることで評価は少しずつよくなっていきます。事故情報は一般的にCIC・JICCで5年、全情連で5〜10年で自然に消えます。返済しながらその時間を進められるのが最も効率的な方法です。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 費用・お支払いについて -->
+  <div class="faq-section">
+    <div class="section-heading">費用・お支払いについて</div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>頭金は必要ですか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">プランによって頭金の有無が異なります。頭金なしのプランもありますが、頭金をご用意いただくことで<span class="highlight">審査が通りやすくなり、月々の返済額や総支払額を抑えられます</span>。可能であれば10〜30万円程度のご準備をおすすめします。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>金利はどのくらいですか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">一般的なカーローン（年利2〜5%程度）と比べて高めになります。年利15〜20%前後になる場合もあります。月々の支払額だけでなく、<span class="highlight">総支払額（元金＋利息の合計）</span>を必ずご確認の上でご判断ください。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>月々の支払額はいくらから可能ですか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">お客様の収支状況に合わせて無理のない返済計画をご提案します。家賃・食費などの固定費を差し引いた後に無理なく払える金額から逆算して車種・プランをご提案しますので、お気軽にご相談ください。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>支払い回数は選べますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">はい、支払い回数はご相談の上で設定可能です。ただし回数が多くなるほど総支払額も増えますので、総額を確認しながらご検討ください。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>途中で解約・繰り上げ返済はできますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">繰り上げ返済や途中解約が可能な場合がありますが、<span class="highlight">違約金・手数料が発生する場合があります</span>。また残りの借入が車の現在価値を上回っている場合、解約しても損失が生じることがあります。契約前に必ず条件をご確認ください。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 必要書類について -->
+  <div class="faq-section">
+    <div class="section-heading">必要書類について</div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>必要な書類は何ですか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">仮審査では運転免許証（または身分証明書）が必要です。本審査では給与明細・源泉徴収票などの収入証明書類、勤務先の確認書類などをご提出いただきます。詳細はご相談時にご案内します。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>収入証明は必要ですか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">本審査の際に収入証明書をご提出いただきます。源泉徴収票・給与明細・確定申告書などが該当します。審査では現在の返済能力を重視しますので、正確な書類のご準備をお願いいたします。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 契約・納車について -->
+  <div class="faq-section">
+    <div class="section-heading">契約・納車について</div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>申し込みの流れを教えてください。</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">①無料相談（ネット・電話）→ ②仮審査（数時間〜翌営業日）→ ③本審査（書類提出）→ ④契約（内容確認・署名）→ ⑤納車 → ⑥毎月返済、という流れです。仮審査は無料で、この段階では信用情報の確認は行われないことがほとんどです。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>納車までどれくらいかかりますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">審査通過後、車の整備を経て通常1〜2週間程度でのご納車となります。お急ぎの場合はご相談ください。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>契約時に確認すべきことはありますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">契約書では必ず以下をご確認ください。①総支払額（元金＋利息の合計）、②所有権留保の条件（完済後の移転タイミング）、③途中解約・繰り上げ返済の条件と手数料、④車の引き揚げ条件（何ヶ月延滞で対象になるか）。月々の支払額だけで判断するのはお勧めしません。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>全国対応していますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">はい、全国のお客様にご対応しています。お近くにお住まいでない方もお気軽にお問い合わせください。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- その他 -->
+  <div class="faq-section">
+    <div class="section-heading">その他</div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>返済が遅れそうな場合はどうすればいいですか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">支払いが難しくなりそうな時点で、<span class="highlight">すぐにTRS AUTOへご連絡ください</span>。黙って放置すると延滞が確定し、信用情報にさらなる傷がつきます。早めのご相談が影響を最小限に抑えるコツです。</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <div class="faq-q-text"><span class="q-label">Q.</span>中古車の保証はありますか？</div>
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </button>
+        <div class="faq-a" role="region">
+          <div class="faq-a-inner">はい、保証付きの車両をご用意しています。詳しい保証内容については担当スタッフにお問い合わせください。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.closest('.faq-item');
+      var answer = item.querySelector('.faq-a');
+      var icon = btn.querySelector('.faq-icon');
+      var isOpen = answer.classList.contains('open');
+
+      answer.classList.toggle('open', !isOpen);
+      icon.classList.toggle('open', !isOpen);
+      icon.textContent = isOpen ? '+' : '×';
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+</script>
+
+</body>
+</html>
